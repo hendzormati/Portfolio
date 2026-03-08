@@ -15,13 +15,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Validate HTML
+      - name: Validate assets
         run: |
           if [ ! -f index.html ]; then
             echo "index.html not found!"
             exit 1
           fi
+          if [ ! -f styles.css ]; then
+            echo "styles.css not found!"
+            exit 1
+          fi
+          if [ ! -f main.js ]; then
+            echo "main.js not found!"
+            exit 1
+          fi
           echo "index.html found"
+          echo "styles.css found"
+          echo "main.js found"
 
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:${{ github.sha }} .
