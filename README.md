@@ -3,7 +3,6 @@
 A personal portfolio landing page, containerized with Docker and deployed automatically via GitHub Actions CI/CD.
 
 ![CI/CD](https://github.com/hendzormati/Portfolio/actions/workflows/ci-cd.yml/badge.svg)
-![Docker](https://img.shields.io/docker/pulls/hendzormati/portfolio)
 
 ---
 
