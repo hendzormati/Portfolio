@@ -1,0 +1,16 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# System
+*.log
+*.DS_Store
+.DS_Store?
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Docker
+.env
